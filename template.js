@@ -12,7 +12,7 @@ exports.template = function(grunt, init, done) {
     // Prompt for these values.
     init.prompt('name'),
     init.prompt('version', '1.0.0'),
-    init.prompt('description', 'The best jQuery plugin ever.'),
+    init.prompt('description'),
     init.prompt('repository'),
     init.prompt('homepage'),
     init.prompt('bugs'),
