@@ -1,19 +1,14 @@
 {
-  "name": "node-command",
+  "name": "grunt-init-command",
   "description": "Commonjs template for command",
   "version": "1.0.0",
-  "homepage": "https://github.com/popomore/node-command",
+  "homepage": "https://github.com/popomore/grunt-init-command",
   "repository": {
     "type": "git",
-    "url": "git://github.com/popomore/node-command.git"
+    "url": "git://github.com/popomore/grunt-init-command.git"
   },
   "bugs": {
-    "url": "https://github.com/popomore/node-command/issues"
+    "url": "https://github.com/popomore/grunt-init-command/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/popomore/node-command/blob/master/LICENSE-MIT"
-    }
-  ]
+  "licenses": "MIT"
 }

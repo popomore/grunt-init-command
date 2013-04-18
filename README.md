@@ -1,13 +1,32 @@
-# node-command
+# grunt-init-command
 
-> commonjs template for command
+> Commonjs template for command
 
 -----
 
 ## Install
 
-Install node-command with npm:
+Install [grunt-init](http://gruntjs.com/project-scaffolding) first
 
-    $ npm install node-command -g
+```
+$ npm install grunt-init -g
+```
+
+Then clone this repo
+
+```
+git clone https://github.com/popomore/grunt-init-command.git ~/.grunt-init/command
+```
 
 ## Usage
+
+```
+$ grunt-init command
+```
+
+If use spm-init
+
+```
+$ spm-init --install popomore/grunt-init-command
+$ spm-init command
+```
