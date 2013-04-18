@@ -1,0 +1,19 @@
+{
+  "name": "node-command",
+  "description": "Commonjs template for command",
+  "version": "1.0.0",
+  "homepage": "https://github.com/popomore/node-command",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/popomore/node-command.git"
+  },
+  "bugs": {
+    "url": "https://github.com/popomore/node-command/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/popomore/node-command/blob/master/LICENSE-MIT"
+    }
+  ]
+}

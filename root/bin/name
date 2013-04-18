@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var index = require('../');
+
+commander
+  .version(require('../package.json').version)
+  .option('-v, --verbose', 'Show more infomation.');
+
+commander.on('--help', function() {
+  console.log();
+  console.log('  Example');
+  console.log();
+  console.log('    {%= name %}');
+  console.log();
+});
+commander.parse(process.argv);
