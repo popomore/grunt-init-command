@@ -15,3 +15,10 @@ commander.on('--help', function() {
   console.log();
 });
 commander.parse(process.argv);
+
+var cmd = commander.args[0];
+if (!commander.args[0]) {
+  process.stdout.write(commander.helpInformation());
+  commander.emit('--help');
+  process.exit();
+}
