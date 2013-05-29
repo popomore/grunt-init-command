@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var commander = require('commander');
-var index = require('../');
+var comic = require('../');
 
 commander
   .version(require('../package.json').version)
@@ -16,9 +16,12 @@ commander.on('--help', function() {
 });
 commander.parse(process.argv);
 
-var cmd = commander.args[0];
+console.log(url)
+var url = commander.args[0];
 if (!commander.args[0]) {
   process.stdout.write(commander.helpInformation());
   commander.emit('--help');
   process.exit();
 }
+
+comic(url);

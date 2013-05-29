@@ -9,14 +9,10 @@ test:
 	@./node_modules/.bin/mocha -R spec
 
 coverage:
-	@rm -rf lib-cov
-	@./node_modules/.bin/jscoverage lib lib-cov
-	@COVERAGE=1 ./node_modules/.bin/mocha -R html-cov > coverage.html 
+	./node_modules/.bin/mocha -R html-cov --require blanket  > coverage.html 
 	@open coverage.html
 
 coveralls:
-	@rm -rf lib-cov
-	@./node_modules/.bin/jscoverage lib lib-cov
-	@ICOV=1 ./node_modules/.bin/mocha -R mocha-lcov-reporter | ./node_modules/.bin/coveralls
+	./node_modules/.bin/mocha -R mocha-lcov-reporter  --require blanket | ./node_modules/.bin/coveralls
 
 .PHONY: test

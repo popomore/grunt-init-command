@@ -1,3 +1,1 @@
-var libPath = process.env['COVERAGE'] ? './lib-cov' : './lib';
-
-module.exports = require(libPath + '/index');
+module.exports = require('./lib');
