@@ -1,9 +1,3 @@
-version = `cat package.json | grep version | awk -F'"' '{print $$4}'`
-publish:
-	@git tag ${version}
-	@git push origin ${version}
-	@npm publish
-
 test:
 	@echo TRAVIS_JOB_ID $(TRAVIS_JOB_ID)
 	@./node_modules/.bin/mocha -R spec
